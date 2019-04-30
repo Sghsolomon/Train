@@ -15,12 +15,20 @@
     var destination = document.getElementById("dname").value;
     var frequency = document.getElementById("frequency").value;
     var trainStart = document.getElementById("tstart").value;
+    // clear input text
+         document.getElementById("tname").value = "";
+         document.getElementById("dname").value = "";
+         document.getElementById("frequency").value = "";
+     
      var obj = {
        trainName: trainName,
        destination: destination,
        frequency: frequency,
        trainStart: trainStart
+
+       
      }
+     
   
      firebase.database().ref().push(obj);
   
@@ -52,13 +60,11 @@ function addHtmlTableRow(a,b,c){
         cell4 = newRow.insertCell(3),
         cell5 = newRow.insertCell(4);
 
-        //get value from input text
-        //tname = document.getElementById("tname").value,
-        //dname = document.getElementById("dname").value,
-        //frequency = document.getElementById("frequency").value,
+         
+        
         
 
-        // clear input text
+        
      
      
 
