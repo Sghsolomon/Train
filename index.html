@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script type="text/javascript" src="assets/javascript/train.js"></script>
+    
+
 
     <link rel="stylesheet" type="text/css"href="assets/css/style.css">
     
 <title>Train</title>
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+
 </head>
 <body>
     
@@ -42,10 +45,10 @@
                   <div class="tab">
                       Train Name <input type="text" name="tname" id="tname"><br>
                       Destination <input type="text" name="dname" id="dname"><br>
-                      Frequency (min) <input type="text" name="frequency" id="frequency"><br>
-                      Next Arrival <input type="text" name="narrival" id="narrival"><br>
-                      Minutes Away <input type="text" name="maway" id="maway"><br>
-                      <button onclick="addHtmlTableRow();">Add</button>
+                      Train start <input type="time" name="tstart" id="tstart"><br>
+                      Frequency (min) <input type="number" name="frequency" id="frequency"><br>
+                      
+                      <button id="add-table" onclick="addHtmlTableRow();">Add</button>
                       
                   </div>
                   
@@ -60,5 +63,8 @@
 
                 
 
+                
+                <script type="text/javascript" src="assets/javascript/moment.js"></script>
+                <script type="text/javascript" src="assets/javascript/train.js"></script>
 </body>
 </html>
